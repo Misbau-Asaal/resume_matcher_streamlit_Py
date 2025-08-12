@@ -1,0 +1,9 @@
+@echo off
+echo Installing dependencies...
+pip install -r requirements.txt
+echo Downloading spaCy model...
+python -m spacy download en_core_web_sm
+echo.
+echo Starting the Resume Matcher app...
+python -m streamlit run resume_matcher_streamlit.py
+pause
